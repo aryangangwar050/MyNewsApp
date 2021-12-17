@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171717"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/horscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+
+                android:text="All"
+                android:textColor="#ffffff"
+                 />
+
+            <Button
+                android:id="@+id/business"
+                style="?attr/materialButtonOutlinedStyle"
+                android:outlineProvider="background"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="Business"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/entertainment"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="Entertainment"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/general"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="General"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/health"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="Health"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/science"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="Science"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/sports"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="Sports"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/tech"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="Technology"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="37dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:outlineSpotShadowColor="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horscroll">
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
